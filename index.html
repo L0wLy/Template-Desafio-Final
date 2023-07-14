@@ -762,31 +762,30 @@
             <div class="form">
               <div id="sendmessage">¡Tu mensaje ah sido enviado, gracias!</div>
               <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
+              <form>
                 <div class="form-row">
                   <div class="form-group col-lg-6">
-                    <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="text" name="Nobmre" class="form-control" id="Nombre" placeholder="Nombre" pattern="[a-zA-Z]{1,30}" data-msg="Usar por lo menos 4 carácteres" />
                     <div class="validation"></div>
                   </div>
                   <div class="form-group col-lg-6">
-                    <input type="text" name="apellido" class="form-control" id="apellido" placeholder="Apellido" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="email" class="form-control" name="Email" id="Email" placeholder="Tu Email" data-rule="email" data-msg="Ingresar un Email valido" />
                     <div class="validation"></div>
                   </div>
-                
                   <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <input type="text" name="Apellido" class="form-control" id="Apellido" placeholder="Apellido" pattern="[a-zA-Z]{1,30}" data-msg="Usar por lo menos 4 carácteres" />
                     <div class="validation"></div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" class="form-control" name="Asunto" id="Asunto" placeholder="Asunto" data-rule="minlen:4" data-msg="Ingresar por lo menos 8 carácteres" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="Mensaje" rows="5" data-rule="required" data-msg="Dejanos tu comentario" placeholder="Mensaje"></textarea>
                   <div class="validation"></div>
                 </div>
-                <div class="text-center"><button type="submit" title="Send Message">Enviar Mensaje</button></div>
+                <div class="text-center"><button type="submit" title="Enviar Mensaje" onclick="alert('Bienvenido');">Enviar Mensaje</button></div>
               </form>
             </div>
           </div>
